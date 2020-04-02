@@ -1,0 +1,37 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install
+        uses: Borales/actions-yarn@v2.0.2
+        with:
+          cmd: install # `yarn install`
+
+      - name: Build
+        uses: Borales/actions-yarn@v2.0.2
+        with:
+          cmd: build # `yarn build`
+
+      - name: Export
+        uses: Borales/actions-yarn@v2.0.2
+        with:
+          cmd: export # `yarn export`
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.4.6
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: out

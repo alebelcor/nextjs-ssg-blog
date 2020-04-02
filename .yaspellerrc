@@ -1,0 +1,10 @@
+{
+  "format": "markdown",
+  "lang": "en",
+  "fileExtensions": [
+    ".md"
+  ],
+  "ignoreUrls": true,
+  "dictionary": [
+  ]
+}

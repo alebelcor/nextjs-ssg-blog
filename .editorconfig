@@ -1,0 +1,22 @@
+root = true
+
+# General (for all files):
+#   * utf-8 character encoding
+#   * unix-style newlines
+#   * 2 space indent
+#   * space indentation
+#   * newline ending for every file
+#   * no trailing whitespace
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+indent_size = 4
+
+[humans.txt]
+indent_size = 4

@@ -1,0 +1,16 @@
+# INFO: http://humanstxt.org
+
+# TEAM
+
+    Developer: Alejandro Beltrán Coronado
+    Twitter: @alebelcor
+
+# THANKS
+
+    Next.js team: https://nextjs.org/
+
+# TECHNOLOGY COLOPHON
+
+    React.js
+    Next.js
+    Tailwind CSS
